@@ -257,7 +257,7 @@ ans=
 <tbody>
 <tr>
 <td>
-<pre><if x &gt; 0.5
+<pre>if x &gt; 0.5
  y=3
 else
  y=4
