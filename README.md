@@ -257,7 +257,7 @@ ans=
 <tbody>
 <tr>
 <td>
-<pre><ifx&gt;0.5
+<pre><if x &gt; 0.5
  y=3
 else
  y=4
@@ -267,7 +267,7 @@ end</pre>
 </tr>
 <tr>
 <td>
-<pre>forc=1:3
+<pre>for c = 1:3
  disp(c)
 end</pre>
 </td>
