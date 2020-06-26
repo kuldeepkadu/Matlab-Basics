@@ -32,8 +32,6 @@ The left-side (x) is the variable name containing the value on the right-side (p
 
 
 	
-	
-	
 <h2>Evenly-spaced vectors</h2>
 <table>
 <thead>
@@ -45,7 +43,7 @@ The left-side (x) is the variable name containing the value on the right-side (p
 <tbody>
 <tr>
 <td><code>1:4</code></td>
-<td>Create a vector from <code>1</code> to <code>4</code>, spaced by <code>1</code>, using the colon (:)</a> operator.</td>
+<td>Create a vector from <code>1</code> to <code>4</code>, spaced by <code>1</code>, using the colon (<code>:</code>)</a> operator.</td>
 </tr>
 <tr>
 <td><code>1:0.5:4</code></td>
@@ -59,90 +57,221 @@ The left-side (x) is the variable name containing the value on the right-side (p
 </table>
 
 
+<h2>Creating matrices</h2>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rand<code>(2)</code></td>
+<td>Create a square matrix with <code>2</code> rows and <code>2</code> columns.</td>
+</tr>
+<tr>
+<td><code>zeros</a>(2,3)</code></td>
+<td>Create a rectangular matrix with <code>2</code> rows and <code>3</code> columns.</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2>Indexing</h2>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>A(end,2)</code></td>
+<td>Access the element in the second column of the last row.</td>
+</tr>
+<tr>
+<td><code>A(2,:)</code></td>
+<td>Access the entire second row</td>
+</tr>
+<tr>
+<td><code>A(1:3,:)</code></td>
+<td>Access all columns of the first three rows.</td>
+</tr>
+<tr>
+<td><code>A(2) = 11</code></td>
+<td>Change the value of the second element an array to <code>11</code>.</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2>Array operations</h2>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<pre>[11;11]*[22;22]
+ans=
+ 44
+ 44</pre>
+</td>
+<td>Perform matrix multiplication.</td>
+</tr>
+<tr>
+<td>
+<pre>[11;11].*[22;22]
+ans=
+ 22
+ 22</pre>
+</td>
+<td>Perform element-wise multiplication.</td>
+</tr>
+</tbody>
+</table>
 
 
-	
- 
 
-Evenly-spaced vectors
-Example	Description
-1:4	Create a vector from 1 to 4, spaced by 1, using the colon (:) operator.
-1:0.5:4	Create a vector from 1 to 4, spaced by 0.5.
-linspace(1,10,5)	Create a vector with 5 elements. The values are evenly spaced from 1 to 10.
- 
-
-Creating matrices
-Example	Description
-rand(2)	Create a square matrix with 2 rows and 2 columns.
-zeros(2,3)	Create a rectangular matrix with 2 rows and 3 columns.
- 
-
-Indexing
-Example	Description
-A(end,2)	Access the element in the second column of the last row.
-A(2,:)	Access the entire second row
-A(1:3,:)	Access all columns of the first three rows.
-A(2) = 11	Change the value of the second element an array to 11.
- 
-
-Array operations
-Example	Description
-[1 1; 1 1]*[2 2;2 2]
-ans =
-     4     4
-     4     4	Perform matrix multiplication.
-[1 1; 1 1].*[2 2;2 2]
-ans =
-     2     2
-     2     2	Perform element-wise multiplication.
- 
-
-Multiple outputs
-Example	Description
-[xrow,xcol] = size(x)	Save the number of rows and columns in x to two different variables.
-[xMax,idx] = max(x)	Calculate the maximum value of x and its corresponding index value.
- 
-
-Documentation
-Example	Description
-doc randi	Open the documentation page for the randi function.
- 
-
-Plotting
-Example	Description
-plot(x,y,"ro-","LineWidth",5)	Plot a red (r) dashed (--) line with a
-circle (o) marker, with a heavy line width.
-hold on	Add the next line to existing plot.
-hold off	Create a new axes for the next plotted line.
-title("My Title")	Add a label to a plot.
- 
-
-Using tables
-Example	Description
-data.HeightYards	Extract the variable HeightYards from
-the table data.
-data.HeightMeters = data.HeightYards*0.9144	Derive a table variable from existing data.
- 
-
-Logicals
-Example	Description
-[5 10 15] > 12	Compare a vector to the value 12.
-v1(v1 > 6)	Extract all elements in v1 that are greater than 6.
-x(x==999) = 1	Replace all values in x that are equal to 999 with the value 1.
- 
-
-Programming
-Example	Description
-if x > 0.5
-    y = 3
+<div>
+<h2>Multiple outputs</h2>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>[xrow,xcol] = size(x)</code></td>
+<td>Save the number of rows and columns in <code>x</code> to two different variables.</td>
+</tr>
+<tr>
+<td><code>[xMax,idx] = max(x)</code></td>
+<td>Calculate the maximum value of <code>x</code> and its corresponding index value.</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2>Documentation</h2>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>doc randi</code></td>
+<td>Open the documentation page for the <code>randi</code> function.</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2>Plotting</h2>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>plot(x,y,"ro-","LineWidth",5)</code></td>
+<td>Plot a red (<code>r</code>) dashed (<code>--</code>) line with a<br />circle (<code>o</code>) marker, with a heavy line width.</td>
+</tr>
+<tr>
+<td><code>>hold on</code></td>
+<td>Add the next line to existing plot.</td>
+</tr>
+<tr>
+<td><code>hold off</code></td>
+<td>Create a new axes for the next plotted line.</td>
+</tr>
+<tr>
+<td><code>title("My Title")</code></td>
+<td>Add a label to a plot.</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2>Using tables</h2>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>data.HeightYards</code></td>
+<td>Extract the variable <code>HeightYards</code> from<br />the table <code>data</code>.</td>
+</tr>
+<tr>
+<td><code>data.HeightMeters = data.HeightYards*0.9144</code></td>
+<td>Derive a table variable from existing data.</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2>Logicals</h2>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>[5 10 15] &gt; 12</code></td>
+<td>Compare a vector to the value <code>12</code>.</td>
+</tr>
+<tr>
+<td><code>v1(v1 &gt; 6)</code></td>
+<td>Extract all elements in <code>v1</code> that are greater than <code>6</code>.</td>
+</tr>
+<tr>
+<td><code>x(x==999) = 1</code></td>
+<td>Replace all values in <code>x</code> that are equal to <code>999</code> with the value <code>1</code>.</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2>Programming</h2>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<pre><ifx&gt;0.5
+ y=3
 else
-    y = 4
-end	If x is greater than 0.5, set the value of y to 3.
-
-Otherwise, set the value of y to 4.
-for c = 1:3
-    disp(c)
-end	The loop counter (c) progresses through the
-values 1:3 (1, 2, and 3).
-
-The loop body displays each value of c.
+ y=4
+end</pre>
+</td>
+<td>If <code>x</code> is greater than <code>0.5</code>, set the value of <code>y</code> to <code>3</code>.<br /><br />Otherwise, set the value of <code>y</code> to <code>4</code>.</td>
+</tr>
+<tr>
+<td>
+<pre>forc=1:3
+ disp(c)
+end</pre>
+</td>
+<td>The loop counter (<code>c</code>) progresses through the<br />values <code>1:3</code> (<code>1</code>, <code>2</code>, and <code>3</code>).<br /><br />The loop body displays each value of <code>c</code>.</td>
+</tr>
+</tbody>
+</table>
