@@ -1,20 +1,28 @@
 # Matlab-Basics<br>
 Summary of MATLAB Onramp<br>
 <b>Basic syntax</b><br>
-<table>
-<tr><th>Example</th><th>	Description</th></tr>
-<tr><td>x = pi</td><td>	Create variables with the equal sign (=).<br>
-The left-side (x) is the variable name containing the value on the right-side (pi).</td>/tr>
-<tr><td>y = sin(-5) </td><td>	You can provide inputs to a function using parentheses.</td>/tr>
-</table>
 
-Desktop management
-Function	Example	Description
-save	save data.mat	Save your current workspace to a MAT-file.
-load	load data.mat	Load the variables in a MAT-file to the Workspace.
-clear	clear	Clear all variables from the Workspace.
-clc	clc	Clear all text from the Command Window.
-format	format long	Change how numeric output is displayed.
+<table>
+<tr><th>Example</th><th>Description</th></tr>
+<tr><td>x = pi</td><td>	Create variables with the equal sign (=).<br>
+The left-side (x) is the variable name containing the value on the right-side (pi).</td></tr>
+<tr><td>y = sin(-5) </td><td>	You can provide inputs to a function using parentheses.</td></tr>
+</table>
+<br>
+<b>Desktop management</b>
+<table>
+<tr><th>Function</th><th>Example</th><th>Description</th></tr>
+<tr><td>save</td><td>	save data.mat</td><td>Save your current workspace to a MAT-file.</td></tr>
+<tr><td>load</td><td>	load data.mat</td><td>	Load the variables in a MAT-file to the Workspace.</td></tr>
+<tr><td>clear</td><td>clear</td><td>Clear all variables from the Workspace.</td></tr>
+<tr><td>clc</td><td>	clc</td><td>Clear all text from the Command Window.</td></tr>
+<tr><td>format</td><td>	format long</td><td>Change how numeric output is displayed.</td></tr>
+</table>
+	
+	
+		
+		
+		
  
 
 Array types
