@@ -1,6 +1,6 @@
-# Matlab-Basics
-Summary of MATLAB Onramp
-Basic syntax
+# Matlab-Basics<br>
+Summary of MATLAB Onramp<br>
+<b>Basic syntax</b><br>
 <table>
 <tr><th>Example</th><th>	Description</th></tr>
 <tr><td>x = pi</td><td>	Create variables with the equal sign (=).<br>
