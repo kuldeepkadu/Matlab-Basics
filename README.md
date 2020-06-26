@@ -20,17 +20,48 @@ The left-side (x) is the variable name containing the value on the right-side (p
 </table>
 	
 	
-		
-		
-		
+<b>Array types</b><br>		
+<table>
+	<tr> <th> Example</th> <th> Description</th> </tr>
+	<tr> <td> 4</td> <td> scalar</td> </tr>
+	<tr> <td> [3 5]</td> <td> row vector</td> </tr>
+	<tr> <td> [1;3]</td> <td> column vector</td> </tr>
+	<tr> <td> [3 4 5;6 7 8]</td> <td>matrix</td> </tr>
+</table>
  
 
-Array types
-Example	Description
-4	scalar
-[3 5]	row vector
-[1;3]	column vector
-[3 4 5;6 7 8]	matrix
+
+	
+	
+	
+<h2>Evenly-spaced vectors</h2>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1:4</code></td>
+<td>Create a vector from <code>1</code> to <code>4</code>, spaced by <code>1</code>, using the colon (:)</a> operator.</td>
+</tr>
+<tr>
+<td><code>1:0.5:4</code></td>
+<td>Create a vector from <code>1</code> to <code>4</code>, spaced by <code>0.5</code>.</td>
+</tr>
+<tr>
+<td><code>linspace</a>(1,10,5)</code></td>
+<td>Create a vector with <code>5</code> elements. The values are evenly spaced from <code>1</code> to <code>10</code>.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+	
  
 
 Evenly-spaced vectors
